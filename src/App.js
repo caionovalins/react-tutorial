@@ -3,7 +3,18 @@ import Table from './Table';
 import Form from "./Form";
 
 class App extends Component {
-    state = {characters: []};
+    state = {
+        characters: [
+            {
+                name: 'Tito',
+                job: 'Faker'
+            },
+            {
+                name: 'Berê',
+                job: 'Troublemaker'
+            }
+        ]
+    };
 
     render() {
         const {characters} = this.state;
